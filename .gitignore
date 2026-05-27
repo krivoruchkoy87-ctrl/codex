@@ -17,3 +17,5 @@ venv/
 *.log
 ~$*
 
+# Local Google Drive projects/data. These sync through Drive, not GitHub.
+projects/New project/
