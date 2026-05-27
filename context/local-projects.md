@@ -13,15 +13,16 @@ GitHub is used for scripts, context files, and smaller source-controlled code. G
   - Notes: contains AmoCRM/CRM data exports, documents, scripts, and `.env`.
 
 - `projects/Bitrix OKK/`
-  - Source copied from: `C:\Users\Raildrot\Documents\Claude\Projects\Bitrix Eksfork`
+  - Source copied from: `D:\bitrix_okk_test`
   - Destination: `G:\My Drive\codex\projects\Bitrix OKK`
-  - Size at copy time: about 0.12 MB
+  - Size at copy time: about 27 MB, excluding `__pycache__`, `.pyc`, and temporary files
+  - Notes: this is the correct Bitrix OKK project.
 
 - `projects/Wazapp AI/`
-  - Source copied from: `G:\My Drive\Server Vazap\wazzup-ai`
+  - Source copied from: `D:\wazzup-ai`
   - Destination: `G:\My Drive\codex\projects\Wazapp AI`
   - Size at copy time: about 0.04 MB, excluding `node_modules`
-  - Notes: run `npm install` in this folder if dependencies are needed.
+  - Notes: this is the correct Wazzup/Wazapp AI project. Run `npm install` if dependencies are needed.
 
 - `projects/noahforge/`
   - Source copied from: `D:\noahforge`
@@ -39,4 +40,3 @@ GitHub is used for scripts, context files, and smaller source-controlled code. G
 ## Rule
 
 Use these folders directly from `Google Drive/My Drive/codex/projects` on Mac and from `G:\My Drive\codex\projects` on Windows.
-

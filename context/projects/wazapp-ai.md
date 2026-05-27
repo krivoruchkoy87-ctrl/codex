@@ -4,11 +4,19 @@
 
 `projects/Wazapp AI/`
 
+## Source
+
+Copied from:
+
+```text
+D:\wazzup-ai
+```
+
 ## Purpose
 
-Node.js project for Wazapp/WhatsApp-related AI work.
+Node.js project for Wazzup/Wazapp AI work.
 
-## Data Sources
+## Main Files
 
 - `server.js`
 - `package.json`
@@ -17,17 +25,14 @@ Node.js project for Wazapp/WhatsApp-related AI work.
 
 ## Current State
 
-- Folder is visible in the Mac workspace.
-- Contains a `.env` file, so it must remain excluded from GitHub.
-- Intentionally excluded from GitHub by `.gitignore`.
-
-## Next Actions
-
-- Use this context when the user says to work on `Wazapp AI`.
-- Before running the app, inspect `package.json` for scripts.
+- Synced through Google Drive, not GitHub.
+- Excluded from GitHub by `.gitignore`.
+- `node_modules` was intentionally not copied.
 
 ## Commands
 
 ```bash
-
+npm install
+node server.js
 ```
+

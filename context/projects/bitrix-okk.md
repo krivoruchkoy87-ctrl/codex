@@ -4,27 +4,43 @@
 
 `projects/Bitrix OKK/`
 
+## Source
+
+Copied from:
+
+```text
+D:\bitrix_okk_test
+```
+
 ## Purpose
 
-Bitrix project materials and analysis workspace.
+Bitrix OKK analysis and sales decomposition workspace.
 
-## Data Sources
+## Main Files And Folders
 
-- `Отчёт_знакомство_2026-04-23.docx`
-- `_рабочие_материалы/`
+- `app.py`
+- `.env`
+- `requirements.txt`
+- `data/`
+- `docs/`
+- `reports/`
+- `recordings/`
+- `transcripts/`
+- `academy-onboarding/`
+- `sales-decomposition/`
+- `okk_*.py`
+- `bitrix_*.py`
 
 ## Current State
 
-- Folder is visible in the Mac workspace.
-- Contains project documents and working Markdown materials.
-- Intentionally excluded from GitHub by `.gitignore`.
-
-## Next Actions
-
-- Use this context when the user says to work on `Bitrix OKK`.
+- Synced through Google Drive, not GitHub.
+- Excluded from GitHub by `.gitignore`.
+- `__pycache__`, `.pyc`, and temporary files were intentionally not copied.
 
 ## Commands
 
 ```bash
-
+pip install -r requirements.txt
+python app.py
 ```
+
