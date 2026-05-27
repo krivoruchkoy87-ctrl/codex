@@ -19,5 +19,12 @@ $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 
 & $git status --short
 & $git add .
+
+$changes = & $git status --short
+if (-not $changes) {
+    Write-Host "Нет изменений для commit."
+    exit 0
+}
+
 & $git commit -m "Update Codex workspace $timestamp"
 & $git push

@@ -10,6 +10,11 @@ timestamp="$(date '+%Y-%m-%d %H:%M')"
 
 git status --short
 git add .
+
+if [[ -z "$(git status --short)" ]]; then
+  echo "No changes to commit."
+  exit 0
+fi
+
 git commit -m "Update Codex workspace ${timestamp}"
 git push
-
