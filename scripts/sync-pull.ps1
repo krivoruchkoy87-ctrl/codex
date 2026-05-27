@@ -10,4 +10,9 @@ if (-not $git) {
     exit 1
 }
 
+if (Test-Path ".git") {
+    Get-ChildItem -LiteralPath ".git" -Recurse -Force -Filter "desktop.ini" -ErrorAction SilentlyContinue | Remove-Item -Force
+    Get-ChildItem -LiteralPath ".git" -Recurse -Force -Filter "*.lock" -ErrorAction SilentlyContinue | Remove-Item -Force
+}
+
 & $git pull --rebase
