@@ -1,37 +1,52 @@
 # Google Drive
 
-Рабочая облачная папка:
+Shared Drive folder link:
 
 https://drive.google.com/drive/folders/1LVqbD6tVTB0FHvBFNs8lkNLL71CWysec?usp=sharing
 
-## Windows
+## Important
 
-Google Drive Desktop уже установлен и запущен. На Windows выбрана синхронизация папки `Документы`.
+Do not use the Windows `Documents` backup as the main cross-device workspace. Google Drive may show backed-up computer folders under `Computers`, and those folders are not always available as normal local folders on Mac.
 
-Текущий локальный путь рабочей папки:
+The reliable cross-device location is:
 
 ```text
-C:\Users\Raildrot\Documents\Перенос данных mac и windows
+My Drive/codex
 ```
 
-Это означает, что переносить папку внутрь `G:\Мой диск` не нужно, если Google Drive действительно синхронизирует `Документы`. Иначе появятся две копии одной рабочей папки.
+## Windows
 
-Проверка:
+Current local path:
 
-1. Открой Google Drive Desktop.
-2. Проверь, что папка `Документы` отмечена как синхронизируемая.
-3. Дождись статуса "синхронизировано".
-4. Убедись, что папка `Перенос данных mac и windows` видна в Google Drive через веб-интерфейс или на Mac.
+```text
+G:\Мой диск\codex
+```
+
+This is the same as:
+
+```text
+G:\My Drive\codex
+```
+
+Use this folder in Codex on Windows.
 
 ## Mac
 
-1. Установи Google Drive Desktop.
-2. Войди в тот же Google-аккаунт.
-3. Найди синхронизированную папку `Документы`.
-4. Открой `Документы/Перенос данных mac и windows` в Codex.
+In Finder, look for:
 
-## Важно
+```text
+Google Drive/My Drive/codex
+```
 
-Codex работает с локальными файлами. Веб-ссылка на Google Drive сама по себе не заменяет локальную синхронизацию через Google Drive Desktop.
+If it is not visible yet:
 
-Если на Mac папка `Документы` не появляется автоматически, можно использовать альтернативный вариант: создать папку внутри `G:\Мой диск` на Windows и открыть ее через `My Drive` на Mac. Но текущий выбранный вариант - синхронизация `Документы`.
+1. Open Google Drive Desktop.
+2. Make sure you are logged in to the same Google account.
+3. Wait for sync to finish.
+4. Open Google Drive in the browser and check that `My Drive/codex` exists.
+5. In Google Drive Desktop settings, make sure `My Drive` is available in Finder.
+
+## Rule
+
+Use `My Drive/codex` as the single source of truth. Avoid working in the old `Documents` copy.
+

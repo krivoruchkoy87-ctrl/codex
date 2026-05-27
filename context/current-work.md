@@ -1,37 +1,61 @@
-# Текущая работа Codex
+# Current Codex Work
 
-Дата обновления: 2026-05-27
+Updated: 2026-05-27
 
-## Главная цель
+## Main Goal
 
-Сделать единую рабочую папку, чтобы продолжать задачи Codex между Windows и Mac без потери локальных файлов, выгрузок, документов и контекста.
+Keep one shared Codex workspace that works on both Windows and Mac, including local files, exports, documents, scripts, secrets, and handoff notes.
 
-## Где что лежит
+## Canonical Folder
 
-- Код и проекты: `projects/`
-- Выгрузки AmoCRM/CRM: `data/`
-- Документы для анализа: `documents/`
-- API/env-файлы: `secrets/`
-- Контекст и передача задач: `context/`
+Windows:
 
-## Что сделано
+```text
+G:\My Drive\codex
+```
 
-- Создана базовая структура рабочей папки.
-- Добавлены скрипты для Git-синхронизации.
-- Подготовлены шаблоны передачи контекста между Windows и Mac.
-- Выбран Google Drive как облачная синхронизация.
-- На Windows установлен Google Drive Desktop.
-- Google Drive настроен на синхронизацию папки `Документы`, где сейчас лежит эта рабочая папка.
+In Windows Explorer this appears as:
 
-## Следующий шаг
+```text
+G:\Мой диск\codex
+```
 
-1. Дождаться полной синхронизации папки `Документы` в Google Drive.
-2. На Mac подключить Google Drive Desktop к тому же аккаунту.
-3. Открыть синхронизированную папку `Документы/Перенос данных mac и windows` в Codex.
-4. Создать приватный GitHub-репозиторий.
-5. Подключить эту папку к репозиторию.
+Mac:
 
-## Команды
+```text
+Google Drive/My Drive/codex
+```
+
+This folder is now the canonical workspace. The old folder under `C:\Users\Raildrot\Documents\...` is no longer the main working folder.
+
+## Structure
+
+- `projects/` - projects, code, scripts, analytics.
+- `data/` - AmoCRM/CRM exports, CSV, JSON, Excel, raw data.
+- `documents/` - PDF, DOCX, XLSX and other source documents.
+- `secrets/` - `.env` files and local credentials.
+- `context/` - handoff notes and current work state.
+- `scripts/` - quick Git sync commands.
+
+## Done
+
+- Created the base workspace structure.
+- Installed Git for Windows.
+- Installed Google Drive Desktop.
+- Created the GitHub repository: `https://github.com/krivoruchkoy87-ctrl/codex`.
+- Connected local Git remote `origin`.
+- Created and pushed the initial commit.
+- Moved the workspace into `G:\My Drive\codex` so it appears on Mac through `Google Drive/My Drive/codex`.
+
+## Next Steps
+
+1. Wait until Google Drive finishes syncing `My Drive/codex`.
+2. On Mac, open Google Drive Desktop with the same Google account.
+3. In Finder, open `Google Drive/My Drive/codex`.
+4. Open that folder in Codex.
+5. Run `./scripts/sync-pull.sh` before continuing work on Mac.
+
+## Commands
 
 Windows:
 
@@ -46,3 +70,4 @@ Mac:
 ./scripts/sync-pull.sh
 ./scripts/sync-push.sh
 ```
+

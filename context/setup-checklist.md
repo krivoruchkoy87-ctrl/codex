@@ -2,33 +2,38 @@
 
 ## Windows
 
-- [x] Создать структуру `CodexWork`.
-- [x] Установить Git for Windows.
-- [x] Инициализировать локальный Git-репозиторий.
-- [x] Установить Google Drive Desktop.
-- [x] Запустить Google Drive Desktop.
-- [x] Настроить синхронизацию папки `Документы`.
-- [ ] Дождаться полной синхронизации.
-- [ ] Создать приватный GitHub-репозиторий.
-- [ ] Подключить remote `origin`.
-- [ ] Сделать первый commit и push.
+- [x] Create the Codex workspace structure.
+- [x] Install Git for Windows.
+- [x] Initialize the local Git repository.
+- [x] Install Google Drive Desktop.
+- [x] Start Google Drive Desktop.
+- [x] Create GitHub repository.
+- [x] Connect remote `origin`.
+- [x] Create and push the first commit.
+- [x] Move the workspace to `G:\My Drive\codex`.
+- [ ] Wait until Google Drive fully syncs `My Drive/codex`.
 
 ## Mac
 
-- [ ] Установить Google Drive Desktop и войти в тот же аккаунт.
-- [ ] Дождаться синхронизации папки `Документы`.
-- [ ] Найти `Документы/Перенос данных mac и windows`.
-- [ ] Проверить Git: `git --version`.
-- [ ] Открыть эту же папку в Codex.
-- [ ] Проверить `context/current-work.md`.
-- [ ] Запустить `./scripts/sync-pull.sh`.
+- [ ] Install Google Drive Desktop.
+- [ ] Log in to the same Google account.
+- [ ] Find `Google Drive/My Drive/codex` in Finder.
+- [ ] Check Git: `git --version`.
+- [ ] Open `Google Drive/My Drive/codex` in Codex.
+- [ ] Read `context/current-work.md`.
+- [ ] Run `./scripts/sync-pull.sh`.
 
-## GitHub remote
+## GitHub
 
-После создания приватного репозитория:
+Repository:
 
-```powershell
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git branch -M main
-git push -u origin main
+```text
+https://github.com/krivoruchkoy87-ctrl/codex
 ```
+
+Remote:
+
+```text
+origin https://github.com/krivoruchkoy87-ctrl/codex.git
+```
+
