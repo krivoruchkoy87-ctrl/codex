@@ -22,7 +22,7 @@ $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 
 $changes = & $git status --short
 if (-not $changes) {
-    Write-Host "Нет изменений для commit."
+    Write-Host "No changes to commit."
     exit 0
 }
 
